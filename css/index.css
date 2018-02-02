@@ -241,6 +241,34 @@ header .logo {
 .contact p {
   margin: 40px 0;
 }
+.contact h4 {
+  /* @media @laptop {
+            letter-spacing: 2px;
+        }
+        @media @tablet {
+            letter-spacing: 1.4px;
+        }
+        @media @phone {
+            letter-spacing: 0.7px;
+        }
+        letter-spacing: 2.5px; */
+  letter-spacing: 0.7px;
+}
+@media (min-width: 400px) {
+  .contact h4 {
+    letter-spacing: 1.4px;
+  }
+}
+@media (min-width: 768px) {
+  .contact h4 {
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1100px) {
+  .contact h4 {
+    letter-spacing: 2.5px;
+  }
+}
 /* Footer Styles */
 footer {
   text-align: center;
