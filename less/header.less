@@ -5,11 +5,58 @@ header {
     display: flex;
 
     nav {
+        // if max-width:
+        /* @media @laptop {
+            width: 499px;
+        }
+        @media @tablet {
+            width: 351px;
+        }
+        @media @phone {
+            width: 186.5px;
+        }
+        width: 610px; */
+
+        // if min-width:
+        @media @tablet {
+            width: 351px;
+        }
+        @media @laptop {
+            width: 499px;
+        }
+        @media @desktop {
+            width: 610px;
+        }
+        width: 186.5px;
+
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            // if max-width:
+            /* @media @laptop {
+                font-size: 15.3px;
+            }
+            @media @tablet {
+                font-size: 14.3px;
+            }
+            @media @phone {
+                font-size: 13.2px;
+            }
+            font-size: 16px; */
+
+            // if min-width:
+            @media @tablet {
+                font-size: 14.3px;
+            }
+            @media @laptop {
+                font-size: 15.3px;
+            }
+            @media @desktop {
+                font-size: 16px;
+            }
+            font-size: 13.2px;
 
             li {
 
@@ -28,6 +75,25 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        
+        // if max-width:
+        /* @media @laptop {
+            margin: 28px 0 0 41px;
+            width: 166.5px;
+            height: 39px;
+        }
+        @media @tablet {
+            margin: 28px 0 0 28.5px;
+            width: 144px;
+            height: 34.5px;
+        }
+        @media @phone {
+            margin: 28px 0 0 15px;
+            width: 120px;
+            height: 29.5px;
+        }
+        margin: 28px 0 0 50px;
+        width: 183px;
+        height: */
     }
 }// header

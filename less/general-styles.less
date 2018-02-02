@@ -16,6 +16,29 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    // if max-width:
+    /* @media @laptop {
+        width: 736px;
+    }
+    @media @tablet {
+        width: 544px;
+    }
+    @media @phone {
+        width: 331px;
+    }
+    width: 880px; */
+
+    // if min-width:
+    @media @tablet {
+        width: 544px;
+    }
+    @media @laptop {
+        width: 736px;
+    }
+    @media @desktop {
+        width: 880px;
+    }
+    width: 736px;
+
     margin: auto;
 }

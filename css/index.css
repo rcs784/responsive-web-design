@@ -159,18 +159,97 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  /* @media @laptop {
+        width: 736px;
+    }
+    @media @tablet {
+        width: 544px;
+    }
+    @media @phone {
+        width: 331px;
+    }
+    width: 880px; */
+  width: 736px;
   margin: auto;
+}
+@media (min-width: 400px) {
+  .container {
+    width: 544px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    width: 880px;
+  }
 }
 header {
   width: 100%;
   display: flex;
+}
+header nav {
+  /* @media @laptop {
+            width: 499px;
+        }
+        @media @tablet {
+            width: 351px;
+        }
+        @media @phone {
+            width: 186.5px;
+        }
+        width: 610px; */
+  width: 186.5px;
+}
+@media (min-width: 400px) {
+  header nav {
+    width: 351px;
+  }
+}
+@media (min-width: 768px) {
+  header nav {
+    width: 499px;
+  }
+}
+@media (min-width: 1100px) {
+  header nav {
+    width: 610px;
+  }
 }
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+  /* @media @laptop {
+                font-size: 15.3px;
+            }
+            @media @tablet {
+                font-size: 14.3px;
+            }
+            @media @phone {
+                font-size: 13.2px;
+            }
+            font-size: 16px; */
+  font-size: 13.2px;
+}
+@media (min-width: 400px) {
+  header nav ul {
+    font-size: 14.3px;
+  }
+}
+@media (min-width: 768px) {
+  header nav ul {
+    font-size: 15.3px;
+  }
+}
+@media (min-width: 1100px) {
+  header nav ul {
+    font-size: 16px;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,7 +261,24 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  /* @media @laptop {
+            margin: 28px 0 0 41px;
+            width: 166.5px;
+            height: 39px;
+        }
+        @media @tablet {
+            margin: 28px 0 0 28.5px;
+            width: 144px;
+            height: 34.5px;
+        }
+        @media @phone {
+            margin: 28px 0 0 15px;
+            width: 120px;
+            height: 29.5px;
+        }
+        margin: 28px 0 0 50px;
+        width: 183px;
+        height: */
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -190,24 +286,124 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  /* @media @laptop {
+            width: 310.5px;
+            height: 310.5px;
+        }
+        @media @tablet {
+            width: 218px;
+            height: 218px;
+        }
+        @media @phone {
+            width: 116px;
+            height: 116px;
+        }
+        width: 379px;
+        height: 379px; */
+  width: 116px;
+  height: 116px;
+}
+@media (min-width: 400px) {
+  .cta img {
+    width: 218px;
+    height: 218px;
+  }
+}
+@media (min-width: 768px) {
+  .cta img {
+    width: 310.5px;
+    height: 310.5px;
+  }
+}
+@media (min-width: 1100px) {
+  .cta img {
+    width: 379px;
+    height: 379px;
+  }
+}
 .cta .cta-text {
-  font-size: 72px;
+  /* @media @laptop {
+            font-size: 64px;
+            margin: 0 68.5px 0 0;
+        }
+        @media @tablet {
+            font-size: 54px;
+            margin: 0 50.5px 0 0;
+        }
+        @media @phone {
+            font-size: 43px;
+            margin: 0 31px 0 0;
+        }
+        font-size: 72px;
+        margin: 0 82px 0 0; */
+  font-size: 43px;
+  margin: 0 31px 0 0;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+}
+@media (min-width: 400px) {
+  .cta .cta-text {
+    font-size: 54px;
+    margin: 0 50.5px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .cta .cta-text {
+    font-size: 64px;
+    margin: 0 68.5px 0 0;
+  }
+}
+@media (min-width: 1100px) {
+  .cta .cta-text {
+    font-size: 72px;
+    margin: 0 82px 0 0;
+  }
 }
 .cta .cta-text button {
+  /* @media @laptop {
+            font-size: 15.3px;
+            width: 154.5px;
+        }
+        @media @tablet {
+            font-size: 14.3px;
+            width: 134px;
+        }
+        @media @phone {
+            font-size: 13.2px;
+            width: 111px;
+        }
+        font-size: 16px;
+        width: 170px; */
+  font-size: 13.2px;
+  width: 111px;
   border: 1px double black;
-  font-size: 16px;
   background: white;
-  width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+}
+@media (min-width: 400px) {
+  .cta .cta-text button {
+    font-size: 14.3px;
+    width: 134px;
+  }
+}
+@media (min-width: 768px) {
+  .cta .cta-text button {
+    font-size: 15.3px;
+    width: 154.5px;
+  }
+}
+@media (min-width: 1100px) {
+  .cta .cta-text button {
+    font-size: 16px;
+    width: 170px;
+  }
 }
 .cta .cta-text button:hover {
   background: black;
@@ -240,34 +436,6 @@ header .logo {
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
-}
-.contact h4 {
-  /* @media @laptop {
-            letter-spacing: 2px;
-        }
-        @media @tablet {
-            letter-spacing: 1.4px;
-        }
-        @media @phone {
-            letter-spacing: 0.7px;
-        }
-        letter-spacing: 2.5px; */
-  letter-spacing: 0.7px;
-}
-@media (min-width: 400px) {
-  .contact h4 {
-    letter-spacing: 1.4px;
-  }
-}
-@media (min-width: 768px) {
-  .contact h4 {
-    letter-spacing: 2px;
-  }
-}
-@media (min-width: 1100px) {
-  .contact h4 {
-    letter-spacing: 2.5px;
-  }
 }
 /* Footer Styles */
 footer {
