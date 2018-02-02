@@ -160,26 +160,26 @@ h5 {
 }
 .container {
   /* @media @laptop {
-        width: 736px;
+        width: 625px;
     }
     @media @tablet {
-        width: 544px;
+        width: 450px;
     }
     @media @phone {
-        width: 331px;
+        width: 225px;
     }
     width: 880px; */
-  width: 736px;
+  width: 225px;
   margin: auto;
 }
 @media (min-width: 400px) {
   .container {
-    width: 544px;
+    width: 450px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 625px;
   }
 }
 @media (min-width: 1100px) {
@@ -202,28 +202,14 @@ header nav {
             width: 186.5px;
         }
         width: 610px; */
-  width: 186.5px;
-}
-@media (min-width: 400px) {
-  header nav {
-    width: 351px;
-  }
-}
-@media (min-width: 768px) {
-  header nav {
-    width: 499px;
-  }
-}
-@media (min-width: 1100px) {
-  header nav {
-    width: 610px;
-  }
+  width: 44.7vw;
 }
 header nav ul {
   margin-top: 40px;
   width: 610px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
+  flex-wrap: wrap;
   /* @media @laptop {
                 font-size: 15.3px;
             }
@@ -262,23 +248,47 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   /* @media @laptop {
-            margin: 28px 0 0 41px;
+            margin: 28px 0 0 74px;
             width: 166.5px;
-            height: 39px;
+            height: 33px;
         }
         @media @tablet {
-            margin: 28px 0 0 28.5px;
+            margin: 28px 0 0 52px;
             width: 144px;
-            height: 34.5px;
+            height: 28.5px;
         }
         @media @phone {
-            margin: 28px 0 0 15px;
+            margin: 28px 0 0 27px;
             width: 120px;
-            height: 29.5px;
+            height: 23.5px;
         }
-        margin: 28px 0 0 50px;
+        margin: 28px 0 0 91px;
         width: 183px;
-        height: */
+        height: 36px; */
+  margin: 28px 0 0 27px;
+  width: 120px;
+  height: 23.5px;
+}
+@media (min-width: 400px) {
+  header .logo {
+    margin: 28px 0 0 52px;
+    width: 144px;
+    height: 28.5px;
+  }
+}
+@media (min-width: 768px) {
+  header .logo {
+    margin: 28px 0 0 74px;
+    width: 166.5px;
+    height: 33px;
+  }
+}
+@media (min-width: 1100px) {
+  header .logo {
+    margin: 28px 0 0 91px;
+    width: 183px;
+    height: 36px;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -288,32 +298,32 @@ header .logo {
 }
 .cta img {
   /* @media @laptop {
-            width: 310.5px;
-            height: 310.5px;
+            width: 200px;
+            height: 200px;
         }
         @media @tablet {
-            width: 218px;
-            height: 218px;
+            width: 100px;
+            height: 100px;
         }
         @media @phone {
-            width: 116px;
-            height: 116px;
+            width: 75px;
+            height: 75px;
         }
         width: 379px;
         height: 379px; */
-  width: 116px;
-  height: 116px;
+  width: 75px;
+  height: 75px;
 }
 @media (min-width: 400px) {
   .cta img {
-    width: 218px;
-    height: 218px;
+    width: 100px;
+    height: 100px;
   }
 }
 @media (min-width: 768px) {
   .cta img {
-    width: 310.5px;
-    height: 310.5px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media (min-width: 1100px) {
@@ -324,20 +334,20 @@ header .logo {
 }
 .cta .cta-text {
   /* @media @laptop {
-            font-size: 64px;
+            font-size: 59px;
             margin: 0 68.5px 0 0;
         }
         @media @tablet {
-            font-size: 54px;
+            font-size: 58px;
             margin: 0 50.5px 0 0;
         }
         @media @phone {
-            font-size: 43px;
+            font-size: 40px;
             margin: 0 31px 0 0;
         }
         font-size: 72px;
         margin: 0 82px 0 0; */
-  font-size: 43px;
+  font-size: 32px;
   margin: 0 31px 0 0;
   text-align: center;
   letter-spacing: 5px;
@@ -425,13 +435,40 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+  height: 21%;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  /* @media @laptop {
+        padding-right: 10.9px;
+    }
+    @media @tablet {
+        padding-right: 8.05px;
+    }
+    @media @phone {
+        padding-right: 4.9px;
+    }
+    padding-right: 13px; */
+  padding-right: 4.9px;
+}
+@media (min-width: 400px) {
+  .main-content .bottom-content p {
+    padding-right: 8.05px;
+  }
+}
+@media (min-width: 768px) {
+  .main-content .bottom-content p {
+    padding-right: 10.9px;
+  }
+}
+@media (min-width: 1100px) {
+  .main-content .bottom-content p {
+    padding-right: 13px;
+  }
 }
 /* Contact Styles */
 .contact p {
