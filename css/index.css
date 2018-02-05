@@ -205,7 +205,6 @@ header nav {
   width: 44.7vw;
 }
 header nav ul {
-  width: 100%;
   margin-top: 40px;
   justify-content: space-around;
   display: flex;
@@ -391,6 +390,7 @@ header .logo {
         width: 170px; */
   font-size: 13.2px;
   width: 111px;
+  letter-spacing: 1px;
   border: 1px double black;
   background: white;
   height: 32px;
